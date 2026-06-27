@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download Data | Cold War China and Japanese Diplomatic Archives</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Site navigation">
+    <a class="brand" href="index.html">Cold War China Archives</a>
+    <div class="nav-links">
+      <a href="index.html">Search</a>
+      <a href="about.html">About / Method</a>
+      <a href="data.html">Data</a>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <p class="eyebrow">Download Data</p>
+    <h1>Data Downloads</h1>
+    <p class="lead">
+      Download the public CSV files used by this prototype. These files are research navigation data;
+      official archival descriptions and images remain with MOFA and JACAR.
+    </p>
+  </header>
+
+  <main class="about-layout">
+    <section class="panel prose-panel">
+      <h2>Core Tables</h2>
+      <div class="download-grid">
+        <a class="download-card" href="downloads/public_records.csv" download>
+          <strong>public_records.csv</strong>
+          <span>One row per public archival record.</span>
+        </a>
+        <a class="download-card" href="downloads/record_tags.csv" download>
+          <strong>record_tags.csv</strong>
+          <span>Record-to-tag join table.</span>
+        </a>
+        <a class="download-card" href="downloads/public_tag_labels.csv" download>
+          <strong>public_tag_labels.csv</strong>
+          <span>Tag IDs and public display labels.</span>
+        </a>
+        <a class="download-card" href="downloads/public_search_index.csv" download>
+          <strong>public_search_index.csv</strong>
+          <span>Search index used by the website.</span>
+        </a>
+        <a class="download-card" href="downloads/review_flags.csv" download>
+          <strong>review_flags.csv</strong>
+          <span>Open review flags for ambiguous historical entities.</span>
+        </a>
+        <a class="download-card" href="downloads/manifest.csv" download>
+          <strong>manifest.csv</strong>
+          <span>List of downloadable files, row counts, and sizes.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>Controlled Vocabularies</h2>
+      <div class="download-grid">
+        <a class="download-card" href="downloads/controlled_vocabulary_regions.csv" download>
+          <strong>controlled_vocabulary_regions.csv</strong>
+          <span>Regions and regional scope notes.</span>
+        </a>
+        <a class="download-card" href="downloads/controlled_vocabulary_entities.csv" download>
+          <strong>controlled_vocabulary_entities.csv</strong>
+          <span>States, historical states, territories, and political entities.</span>
+        </a>
+        <a class="download-card" href="downloads/controlled_vocabulary_organizations.csv" download>
+          <strong>controlled_vocabulary_organizations.csv</strong>
+          <span>Organizations, institutions, and diplomatic missions.</span>
+        </a>
+        <a class="download-card" href="downloads/controlled_vocabulary_events.csv" download>
+          <strong>controlled_vocabulary_events.csv</strong>
+          <span>Conferences, sessions, announcements, and historical events.</span>
+        </a>
+        <a class="download-card" href="downloads/controlled_vocabulary_blocs.csv" download>
+          <strong>controlled_vocabulary_blocs.csv</strong>
+          <span>Political blocs and negotiating groups.</span>
+        </a>
+        <a class="download-card" href="downloads/controlled_vocabulary_keywords.csv" download>
+          <strong>controlled_vocabulary_keywords.csv</strong>
+          <span>Topical keywords and search terms.</span>
+        </a>
+        <a class="download-card" href="downloads/controlled_vocabulary_analytical_contexts.csv" download>
+          <strong>controlled_vocabulary_analytical_contexts.csv</strong>
+          <span>Interpretive research contexts.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>How To Use</h2>
+      <p>
+        Use <strong>public_records.csv</strong> as the main table. Join it to <strong>record_tags.csv</strong>
+        by <code>record_id</code>, then join tags to <strong>public_tag_labels.csv</strong> by
+        <code>tag_type</code> and <code>tag_id</code>.
+      </p>
+      <p>
+        The controlled vocabularies explain preferred labels, scope notes, historical names, and review cautions.
+        For official archival images and descriptions, follow the MOFA and JACAR links in the records.
+      </p>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>Citation / Use</h2>
+      <p>
+        This dataset is a prototype research navigation dataset. Please cite the official archival institution
+        for primary sources, and treat this site's CSV files as an interpretive finding aid.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Data source: Japanese Diplomatic Archives, Ministry of Foreign Affairs of Japan, and JACAR metadata where noted.
+    </p>
+  </footer>
+</body>
+</html>

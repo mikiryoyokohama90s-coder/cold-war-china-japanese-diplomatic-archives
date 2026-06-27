@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About / Method | Cold War China and Japanese Diplomatic Archives</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Site navigation">
+    <a class="brand" href="index.html">Cold War China Archives</a>
+    <div class="nav-links">
+      <a href="index.html">Search</a>
+      <a href="about.html">About / Method</a>
+      <a href="data.html">Data</a>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <p class="eyebrow">About / Method</p>
+    <h1>About This Prototype</h1>
+    <p class="lead">
+      This prototype organizes selected Japanese diplomatic records on Cold War China,
+      Asian-African diplomacy, recognition politics, and the China representation question.
+    </p>
+  </header>
+
+  <main class="about-layout">
+    <section class="panel prose-panel">
+      <h2>Purpose</h2>
+      <p>
+        このデータベースは、日本外務省外交史料館の戦後外交記録を中心に、
+        冷戦期中国外交に関係する史料を検索するための試作版です。
+        冷戦期のアジア・アフリカ諸国といった第三世界の関係や、
+        中国と台湾の承認競争などのリサーチの手助けになるデータベースです。
+      </p>
+      <p>
+        史料の原本・画像データは、外務省外交史料館およびアジア歴史資料センターなどの
+        公式公開ページを参照します。このサイトは、それらの公開情報に研究用の整理語彙と検索タグを加え、
+        日本語の史料を英語で検索するためのナビゲーション用として用いるサイトです。
+      </p>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>Sources</h2>
+      <ul>
+        <li>Japanese Diplomatic Archives, Ministry of Foreign Affairs of Japan</li>
+        <li>Japan Center for Asian Historical Records (JACAR), where reference metadata is available</li>
+        <li>User-supplied archival notes, file titles, classification numbers, tables of contents, and date ranges</li>
+      </ul>
+      <p>
+        Each record links back to the official MOFA material page when a material ID is available.
+        JACAR reference codes are included in the provenance note when they are used for supplementary metadata.
+      </p>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>Tagging Method</h2>
+      <p>
+        Records are described through controlled vocabularies for regions, entities, organizations, events,
+        blocs, keywords, and analytical contexts. Tags are intended to help discovery, not to replace archival titles.
+      </p>
+      <dl class="method-list">
+        <dt>Region</dt>
+        <dd>Geographic or diplomatic regions such as East Asia, Southeast Asia, Africa, the Middle East, and Afro-Asia.</dd>
+        <dt>Entity</dt>
+        <dd>States, historical states, territories, and ambiguous political references such as PRC, ROC, Ceylon, or North Vietnam.</dd>
+        <dt>Organization</dt>
+        <dd>International organizations, conference secretariats, ministries, diplomatic missions, and related institutions.</dd>
+        <dt>Event</dt>
+        <dd>Specific conferences, sessions, announcements, or historical episodes such as Bandung 1955 or UNGA sessions.</dd>
+        <dt>Keyword</dt>
+        <dd>Topical search terms such as diplomatic recognition, political work, liaison officer appointment, or PRC-ROC competition.</dd>
+        <dt>Analytical Context</dt>
+        <dd>Interpretive research contexts such as decolonization and UN diplomacy or Cold War in Southeast Asia.</dd>
+      </dl>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>China, PRC, ROC, and Taiwan</h2>
+      <p>
+        このデータベースでは、「中国」を史料の記録時期や文脈に応じて、以下のように区別します。
+      </p>
+      <ul>
+        <li><strong>PRC</strong>: 中華人民共和国。</li>
+        <li><strong>ROC</strong>: 中華民国。</li>
+        <li><strong>Taiwan</strong>: 台湾としての地域・政治実体を示す場合。</li>
+        <li><strong>China Representation and Recognition Competition</strong>: 中国代表権・承認競争。PRCとROC/Taiwanのどちらが「中国」を代表するかが争点となる史料、または国交・承認・国連代表権をめぐる過渡期の史料に用います。</li>
+      </ul>
+      <p>
+        この区別は、国連代表権問題、日中国交正常化以前の外交文書、アジア・アフリカ諸国の承認動向を検索するうえで重要です。
+      </p>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>Events And Blocs</h2>
+      <p>
+        イベントと政治的ブロックは分けて扱います。たとえば、バンドン会議は event として扱いますが、
+        その史料すべてに自動的に Afro-Asian bloc を付与するわけではありません。
+      </p>
+      <p>
+        bloc は、共同声明、統一投票方針、交渉主体、明示的な政治的集合として史料上確認できる場合に用います。
+        単なる地域別整理や参加国一覧は、原則として region や entity で表します。
+      </p>
+    </section>
+
+    <section class="panel prose-panel">
+      <h2>Provenance And Review</h2>
+      <p>
+        詳細ページの <strong>Source / Provenance</strong> は、MOFA material ID、JACAR reference code、
+        ユーザー提供の目次情報、API確認日など、データ化の来歴を記録する欄です。
+      </p>
+      <p>
+        歴史的国名や曖昧な政治実体については、review flag を残す場合があります。
+        例: Ceylon, Democratic Republic of Vietnam, Nyasaland, West Germany, Yemen.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      This is a prototype research database. Official archival descriptions remain with the source institutions.
+    </p>
+  </footer>
+</body>
+</html>
